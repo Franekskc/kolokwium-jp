@@ -9,7 +9,7 @@ public class SquareWavePanel extends JPanel {
     private final int prefH = 400;
     public final int deltaX = 5;
     public final int startingMyImageX = -prefW;
-    private BufferedImage myImage;
+    private final BufferedImage myImage;
     int amplitude;
     int frequency;
     public int myImageX = startingMyImageX;

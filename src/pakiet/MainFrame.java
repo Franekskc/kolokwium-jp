@@ -32,7 +32,7 @@ public class MainFrame extends JFrame{
         int amplitude1 = 80;
         int amplitude2 = 50;
         int frequency1 = 100;
-        int frequency2 = 50;
+        int frequency2 = 100;
 
 
 
