@@ -29,19 +29,24 @@ public class MainFrame extends JFrame{
         setContentPane(contentPane);
         contentPane.setLayout(null);
 
+        int amplitude1 = 80;
+        int amplitude2 = 50;
+        int frequency1 = 100;
+        int frequency2 = 50;
 
 
-        SquareWavePanel squareWavePanel = new SquareWavePanel();
+
+        SquareWavePanel squareWavePanel = new SquareWavePanel(amplitude1,frequency1);
         squareWavePanel.setBounds(50, 30, 600, 200);
         squareWavePanel.setBackground(Color.BLACK);
         contentPane.add(squareWavePanel);
 
-        SquareWavePanel secondPanel = new SquareWavePanel();
+        SquareWavePanel secondPanel = new SquareWavePanel(amplitude2,frequency2);
         secondPanel.setBounds(50, 280, 600, 200);
         secondPanel.setBackground(Color.BLACK);
         contentPane.add(secondPanel);
 
-        SquareWavePanel thirdPanel = new SquareWavePanel();
+        SquareWavePanel thirdPanel = new SquareWavePanel(amplitude1+amplitude2,(frequency1+frequency2)/2);
         thirdPanel.setBounds(50, 530, 600, 200);
         thirdPanel.setBackground(Color.BLACK);
         contentPane.add(thirdPanel);

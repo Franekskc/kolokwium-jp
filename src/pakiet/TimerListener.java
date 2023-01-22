@@ -13,9 +13,6 @@ public class TimerListener implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         panel.myImageX += panel.deltaX;
-        if (panel.myImageX >= 0) {
-            panel.myImageX = panel.startingMyImageX;
-        }
         panel.repaint();
     }
 
